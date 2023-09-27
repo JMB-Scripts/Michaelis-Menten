@@ -36,7 +36,7 @@ conda install numpy scipy matplotlib
 1. Run the script:
 
 ```bash
-python yPracticals-Michaelis-Menten-Fit-vXX.py
+python Practicals-Michaelis-Menten-Fit-vXX.py
 ```
 
 2. Use the graphical interface to input data manually or paste it directly from Excel.
