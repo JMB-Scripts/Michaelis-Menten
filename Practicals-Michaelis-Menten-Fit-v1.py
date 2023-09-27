@@ -125,4 +125,8 @@ save_button.grid(column=0, row=11, pady=20)
 paste_button = ttk.Button(frame, text="Paste from Excel", command=paste_from_excel)
 paste_button.grid(column=1, row=11, pady=20)
 
+# Made by JMB 2023 Label
+made_by_label = ttk.Label(frame, text="Made by JMB 2023")
+made_by_label.grid(column=0, columnspan=2, row=12, pady=10)  # Spanning 2 columns for centering
+
 root.mainloop()
