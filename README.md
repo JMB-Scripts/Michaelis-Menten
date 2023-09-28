@@ -39,14 +39,17 @@ conda install numpy scipy matplotlib
 python Michaelis-Menten-Fit-vXX.py
 ```
 1. A window will popup:
+
 ![image](https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/0162d1ca-e50c-4105-a0d0-010c7c2c303c)
-2. Use the graphical interface to input data manually or paste it directly from Excel using the "Paste Data from Excel" button.
+
+3. Use the graphical interface to input data manually or paste it directly from Excel using the "Paste Data from Excel" button.
 
 4. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
+   
    ![image](https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/5e734157-c8b5-42af-860d-24836430ceee)
 
 ## Notes:
 
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
-2. In principle, it should accept numbers with commas or dots ie 1,2E-03 or 1.2E-03.
+2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
