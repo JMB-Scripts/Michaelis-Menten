@@ -40,13 +40,15 @@ python Michaelis-Menten-Fit-vXX.py
 ```
 1. A window will popup:
 
-![image](https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/0162d1ca-e50c-4105-a0d0-010c7c2c303c)
+   <img width="908" alt="image" src="https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/3c4d5463-5ee2-46e2-a86f-be43fbcdd47c">
+
 
 3. Use the graphical interface to input data manually or paste it directly from Excel using the "Paste Data from Excel" button.
 
 4. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
    
-   ![image](https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/5e734157-c8b5-42af-860d-24836430ceee)
+<img width="969" alt="image" src="https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/cf5d777a-077b-497c-89a0-ad5b058450fe">
+
 
 ## Notes:
 
