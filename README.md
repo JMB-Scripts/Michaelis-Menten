@@ -41,7 +41,7 @@ python Michaelis-Menten-Fit-vXX.py
 ```
 1. A window will popup:
 
-   <img width="908" alt="image" src="https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/3c4d5463-5ee2-46e2-a86f-be43fbcdd47c">
+<img width="908" alt="image" src="https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/d4e09358-ce38-43a2-a21b-d7d9ba7d83cb">
 
 
 3. Use the graphical interface to input data manually or paste it directly from Excel using the "Paste Data from Excel" button.
@@ -56,3 +56,4 @@ python Michaelis-Menten-Fit-vXX.py
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
+4. It's possible to make an exe file for Windows using "pyinstaller", for the distribution of the script on computers without Python.   
