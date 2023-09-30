@@ -12,6 +12,7 @@ This tool allows users to input data for substrate concentration (`S`) and obser
 
 ## Dependencies:
 
+- `webbrowser`
 - `numpy`
 - `tkinter`
 - `scipy`
