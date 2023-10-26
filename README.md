@@ -1,6 +1,6 @@
 # Michaelis-Menten Equation Fitting Tool
 
-This tool allows users to input data for substrate concentration (`S`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve fitting results easily.
+This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
 
 ## Features:
 
@@ -56,4 +56,5 @@ python Michaelis-Menten-Fit-vXX.py
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. It's possible to make an exe file for Windows using "pyinstaller", for the distribution of the script on computers without Python.   
+4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers without Python.
+5. I can also provide the stand-alone version for Windows upon request.    
