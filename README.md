@@ -1,6 +1,7 @@
 # Michaelis-Menten Equation Fitting Tool
 
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
+The last version of the script is MM-fit-v16
 
 ## Features:
 
