@@ -1,6 +1,7 @@
 # Michaelis-Menten Equation Fitting Tool
 
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
+The last version of the script is MM-fit-v16
 
 ## Features:
 
@@ -41,14 +42,37 @@ python Michaelis-Menten-Fit-vXX.py
 ```
 1. A window will popup:
 
-<img width="908" alt="image" src="https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/d4e09358-ce38-43a2-a21b-d7d9ba7d83cb">
-
+<img width="1042" alt="image" src="https://github.com/user-attachments/assets/41b00e00-3484-43de-b025-e7733e18e333">
 
 3. Use the graphical interface to input data manually or paste it directly from Excel using the "Paste Data from Excel" button.
-
-4. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
    
-<img width="969" alt="image" src="https://github.com/JMB-Scripts/Michaelis-Menten/assets/20182399/cf5d777a-077b-497c-89a0-ad5b058450fe">
+
+<img width="1042" alt="image" src="https://github.com/user-attachments/assets/51ca9a08-43e4-4fcb-bd49-b6dcc4164485">
+
+
+5. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
+
+Micahelis Menten representation with the fit and a measure of the quality of the fit :
+
+<img width="1112" alt="image" src="https://github.com/user-attachments/assets/ae4de5f4-9727-420c-a385-03b72af68c67">
+
+
+Lineweaver and Burk representation :
+
+<img width="1112" alt="image" src="https://github.com/user-attachments/assets/4a959aa9-404f-4244-81ec-a7f5ea4b98d5">
+
+
+6. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
+
+<img width="522" alt="image" src="https://github.com/user-attachments/assets/fa464501-43b3-4a0d-8125-99f0ed0a69c9">
+
+   Check the value to exclude for the fit:
+
+<img width="522" alt="image" src="https://github.com/user-attachments/assets/0059e96b-045f-466c-ac28-48f5ea9969a2">
+
+   then click on Apply and Refit, the new fit appears without the exclude value.
+   
+   <img width="1112" alt="image" src="https://github.com/user-attachments/assets/eeafaca1-b601-4f9d-bdde-abc4ccf32c8a">
 
 
 ## Notes:
@@ -57,4 +81,4 @@ python Michaelis-Menten-Fit-vXX.py
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
 4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers without Python.
-5. I can also provide the stand-alone version for Windows upon request.    
+5. I can also provide the stand-alone version for Windows using pytorch (i can provide it upon request).    
