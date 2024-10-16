@@ -54,8 +54,8 @@ python Michaelis-Menten-Fit-vXX.py
 
 Micahelis Menten representation with the fit and a measure of the quality of the fit :
 
-<img width="1112" alt="image" src="https://github.com/user-attachments/assets/ae4de5f4-9727-420c-a385-03b72af68c67">
 
+<img width="1112" alt="image" src="https://github.com/user-attachments/assets/85dc4407-832b-4be5-9382-aa553de924d3">
 
 Lineweaver and Burk representation :
 
@@ -72,7 +72,8 @@ Lineweaver and Burk representation :
 
    then click on Apply and Refit, the new fit appears without the exclude value.
    
-   <img width="1112" alt="image" src="https://github.com/user-attachments/assets/eeafaca1-b601-4f9d-bdde-abc4ccf32c8a">
+<img width="1112" alt="image" src="https://github.com/user-attachments/assets/5af7d587-2cfc-4371-8d7d-88365c3c9416">
+
 
 
 ## Notes:
@@ -80,5 +81,5 @@ Lineweaver and Burk representation :
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers without Python.
-5. I can also provide the stand-alone version for Windows using pytorch (i can provide it upon request).    
+4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers that don't have Python install.
+5. I can also provide upon request the stand-alone version for Windows (MM-fit-v16.exe).    
