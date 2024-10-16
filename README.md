@@ -40,7 +40,13 @@ conda install numpy scipy matplotlib
 ```bash
 python Michaelis-Menten-Fit-vXX.py
 ```
-1. A window will popup:
+or for Window (upon request)
+double click onthe file:
+
+MM-fit-v16.exe
+
+
+2. A window will popup:
 
 <img width="1042" alt="image" src="https://github.com/user-attachments/assets/41b00e00-3484-43de-b025-e7733e18e333">
 
@@ -50,7 +56,7 @@ python Michaelis-Menten-Fit-vXX.py
 <img width="1042" alt="image" src="https://github.com/user-attachments/assets/51ca9a08-43e4-4fcb-bd49-b6dcc4164485">
 
 
-5. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
+4. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
 
 Micahelis Menten representation with the fit and a measure of the quality of the fit :
 
@@ -62,15 +68,16 @@ Lineweaver and Burk representation :
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/4a959aa9-404f-4244-81ec-a7f5ea4b98d5">
 
 
-6. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
+5. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
 
 <img width="522" alt="image" src="https://github.com/user-attachments/assets/fa464501-43b3-4a0d-8125-99f0ed0a69c9">
 
-   Check the value to exclude for the fit:
+   Check the values that seem a bit odd to exclude them for the fit:
 
-<img width="522" alt="image" src="https://github.com/user-attachments/assets/0059e96b-045f-466c-ac28-48f5ea9969a2">
+<img width="522" alt="image" src="https://github.com/user-attachments/assets/dbb9a045-8072-48ee-bd95-4ad756e60390">
 
-   then click on Apply and Refit, the new fit appears without the exclude value.
+
+   then click on "Apply and Refit", the new fit appears without the exclude values.
    
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/5af7d587-2cfc-4371-8d7d-88365c3c9416">
 
