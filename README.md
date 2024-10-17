@@ -46,7 +46,7 @@ python Michaelis-Menten-Fit-vXX.py
 or for Window (upon request, cause the executable is relatively large around 200Mo)
 double click onthe file:
 
-```MM-fit-v16.exe
+MM-fit-v16.exe
 
 ![image](https://github.com/user-attachments/assets/17b7c625-2fb1-4ed7-8540-0ff23b1fdbfc)
 
