@@ -38,7 +38,7 @@ conda install numpy scipy matplotlib
 1. Run the script:
 
 ```bash
-python Michaelis-Menten-Fit-vXX.py
+python MM-Fit-vXX.py
 ```
 
 ![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
