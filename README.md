@@ -48,7 +48,8 @@ double click onthe file:
 
 MM-fit-v16.exe
 
-![image](https://github.com/user-attachments/assets/da734423-c274-4860-a7d8-fac796fa85e5)
+![image](https://github.com/user-attachments/assets/17b7c625-2fb1-4ed7-8540-0ff23b1fdbfc)
+
 
 2. A window will popup:
 
