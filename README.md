@@ -40,11 +40,15 @@ conda install numpy scipy matplotlib
 ```bash
 python Michaelis-Menten-Fit-vXX.py
 ```
+
+![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
+
 or for Window (upon request)
 double click onthe file:
 
 MM-fit-v16.exe
 
+![image](https://github.com/user-attachments/assets/da734423-c274-4860-a7d8-fac796fa85e5)
 
 2. A window will popup:
 
