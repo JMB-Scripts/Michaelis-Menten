@@ -53,8 +53,8 @@ MM-fit-v16.exe
 3. Use the graphical interface to input data manually or paste it directly from Excel using the "Paste Data from Excel" button.
 
 
-![image](https://github.com/user-attachments/assets/795fbbbe-7973-4521-b924-10d4fba5237e)
- 
+![image](https://github.com/user-attachments/assets/539d8df2-01a1-426e-b8d9-90d530a0bb8b)
+
 
 <img width="1042" alt="image" src="https://github.com/user-attachments/assets/51ca9a08-43e4-4fcb-bd49-b6dcc4164485">
 
