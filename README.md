@@ -97,4 +97,4 @@ Lineweaver and Burk representation :
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
 4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers that don't have Python install.
-5. I can also provide upon request the stand-alone version for Windows (MM-fit-v16.exe).    
+5. I can also provide upon request the stand-alone version for Windows (MM-fit-v2.0.exe).    
