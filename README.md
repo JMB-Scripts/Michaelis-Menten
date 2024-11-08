@@ -67,23 +67,24 @@ MM-fit-v16.exe
 
 
 
-4. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
+4. Click on "Fit Michaelis-Menten " to fit the Michaelis-Menten equation and visualize the results.
 
 Micahelis Menten representation with the fit (Km, Vmax, and R^2 to estimate of the quality of the fit) :
 
 
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/85dc4407-832b-4be5-9382-aa553de924d3">
 
+
 Close the MM fit window to get back to the GUI 
 
-Click on Draw Lineweaver and Burk Plot to get the representation :
+5. Click on Draw Lineweaver and Burk Plot to get the representation :
 
 
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/bccc213a-0d52-4fff-a473-057ca0e8184c">
 
 Close the Lineweaver and Burk Plot window to get back to the GUI 
 
-5. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
+6. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
 
 <img width="522" alt="image" src="https://github.com/user-attachments/assets/fa464501-43b3-4a0d-8125-99f0ed0a69c9">
 
@@ -95,7 +96,9 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
    
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/5af7d587-2cfc-4371-8d7d-88365c3c9416">
 
-
+7. Click on "Reset Data" to clear all the fields and reset checked checboxes.
+   
+9. Click on "Quit" to quit  
 
 ## Notes:
 
