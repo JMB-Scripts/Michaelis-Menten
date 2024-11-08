@@ -60,19 +60,23 @@ MM-fit-v16.exe
 
 
 ![image](https://github.com/user-attachments/assets/539d8df2-01a1-426e-b8d9-90d530a0bb8b)
+   
+      GUI After paste
+   
+<img width="973" alt="image" src="https://github.com/user-attachments/assets/fe30a5dc-d999-4ac4-a610-0777f6c8a9a8">
 
-
-<img width="1042" alt="image" src="https://github.com/user-attachments/assets/51ca9a08-43e4-4fcb-bd49-b6dcc4164485">
 
 
 4. Click on "Save Data and Fit" to fit the Michaelis-Menten equation and visualize the results.
 
-Micahelis Menten representation with the fit and a measure of the quality of the fit :
+Micahelis Menten representation with the fit (Km, Vmax, and R^2 to estimate of the quality of the fit) :
 
 
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/85dc4407-832b-4be5-9382-aa553de924d3">
 
-Lineweaver and Burk representation :
+
+Click on Draw Lineweaver and Burk plot to get the representation :
+
 
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/4a959aa9-404f-4244-81ec-a7f5ea4b98d5">
 
