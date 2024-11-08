@@ -76,20 +76,20 @@ Micahelis Menten representation with the fit (Km, Vmax, and R^2 to estimate of t
 
 Close the MM fit window to get back to the GUI 
 
-Click on Draw Lineweaver and Burk plot to get the representation :
+Click on Draw Lineweaver and Burk Plot to get the representation :
 
 
-<img width="1112" alt="image" src="https://github.com/user-attachments/assets/4a959aa9-404f-4244-81ec-a7f5ea4b98d5">
+<img width="929" alt="image" src="https://github.com/user-attachments/assets/bccc213a-0d52-4fff-a473-057ca0e8184c">
 
+Close the Lineweaver and Burk Plot window to get back to the GUI 
 
 5. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
 
 <img width="522" alt="image" src="https://github.com/user-attachments/assets/fa464501-43b3-4a0d-8125-99f0ed0a69c9">
 
-   Check the values that seem a bit odd to exclude them for the fit:
+   Check the values that seem a bit odd to exclude them for the fit and Lineweaver and Burk Plot:
 
 <img width="522" alt="image" src="https://github.com/user-attachments/assets/dbb9a045-8072-48ee-bd95-4ad756e60390">
-
 
    then click on "Apply and Refit", the new fit appears without the exclude values.
    
