@@ -74,6 +74,7 @@ Micahelis Menten representation with the fit (Km, Vmax, and R^2 to estimate of t
 
 <img width="1112" alt="image" src="https://github.com/user-attachments/assets/85dc4407-832b-4be5-9382-aa553de924d3">
 
+Close the MM fit window to get back to the GUI 
 
 Click on Draw Lineweaver and Burk plot to get the representation :
 
