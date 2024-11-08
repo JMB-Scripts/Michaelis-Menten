@@ -23,15 +23,15 @@
 #
 # View the source code and contribute at https://github.com/JMB-Scripts/Michaelis-Menten
 #
-# 2024 v16 add:
+# 2024 v20 add:
 # 1- Rsquare for all fit
-# 2- LB representation 
+# 2- LB representation under click button
 # 3- Residuals of the MM fits
 # 4- Exclud data for improving the fit with bad data
-# 5- The rest data unchecked previously check excluded data (was harsh to do)
+# 5- The rest data unchecked previously check excluded data (was harsh to do, might be some trouble)
 # 6- a better view of the graph with smooth major and minor lines
 #
-# 2024 Jean-Marie Bourhis with the help of chat-gpt and Claude because I'm a "tanche" in python programming but getting better
+# 2024 Jean-Marie Bourhis with the help of chat-gpt and Claude.AI because I'm a "tanche" in python programming but getting better
 # 
 # Thanks to Sylvie, Olivier, Jérome, Alex, the "MEB biochemistry Team" for their help  
 #
@@ -248,7 +248,7 @@ def draw_lb_plot():
 
     # Set x-axis and Y limits based on km_serie1
     if km_serie1:
-        x_min = round(-1.5 / (km_serie1))
+        x_min = round(-1.75 / (km_serie1))
         x_max = min(S_values_filtered)
         x_max = round(1.5/(x_max))  # Add 15% margin
         plt.xlim(x_min,x_max)
@@ -278,7 +278,8 @@ def draw_lb_plot():
 ###################################################
 # Data exclusion GUI
 ###################################################
-
+ 
+checkboxes = []
 def open_exclusion_gui():
     global checkboxes 
 
@@ -293,8 +294,7 @@ def open_exclusion_gui():
     ttk.Label(frame, text="S0").grid(column=1, row=1, padx=5, pady=2)
     for v_idx in range(3):
         ttk.Label(frame, text=f"v0-{v_idx+1}").grid(column=2+v_idx*2, row=1, padx=5, pady=2, columnspan=2)
-    
-    checkboxes = []
+
 
     for idx in range(10):  # Assuming max 10 data points
         if S_entries[idx].get().strip() != '':
@@ -351,10 +351,10 @@ def paste_from_excel():
 ###################################################
 
 def reset_data():
-    global checkboxes 
-    # Uncheck all checkboxes in the exclusion GUI
-    for _, _, cb_var in checkboxes:
-        cb_var.set(False)  # Uncheck all checkboxes
+    if checkboxes:
+        # Uncheck all checkboxes in the exclusion GUI
+        for _, _, cb_var in checkboxes:
+            cb_var.set(False)  # Uncheck all checkboxes
 
     # Reset the global variable that stores the excluded data
     global excluded_data
@@ -447,7 +447,7 @@ url3 = "https://www.ibs.fr/"
 link3 = ttk.Label(frame, text="IBS", cursor="hand2", foreground="red", underline=False)
 link3.grid(row=13, column=2)
 link3.bind("<Button-1>", lambda e: open_url(url3))
-# Made by JMB 2023 Label
+# Made by JMB 2024 Label
 made_by_label = ttk.Label(frame, text="JMB-Scripts - 2024 -")
 made_by_label.grid(column=3, columnspan=2, row=12, pady=10)  # Spanning 2 columns for centering
 
