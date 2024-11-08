@@ -60,8 +60,8 @@ MM-fit-v16.exe
 
 
 ![image](https://github.com/user-attachments/assets/539d8df2-01a1-426e-b8d9-90d530a0bb8b)
-   
-      GUI After paste
+
+The GUI after pasting values from Excel
    
 <img width="973" alt="image" src="https://github.com/user-attachments/assets/fe30a5dc-d999-4ac4-a610-0777f6c8a9a8">
 
@@ -79,8 +79,10 @@ Close the MM fit window to get back to the GUI
 
 5. Click on Draw Lineweaver and Burk Plot to get the representation :
 
-
 <img width="929" alt="image" src="https://github.com/user-attachments/assets/bccc213a-0d52-4fff-a473-057ca0e8184c">
+
+<img width="1112" alt="image" src="https://github.com/user-attachments/assets/a6d62974-9389-432e-b782-04c3b33e7255">
+
 
 Close the Lineweaver and Burk Plot window to get back to the GUI 
 
