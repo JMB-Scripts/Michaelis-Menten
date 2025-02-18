@@ -103,9 +103,28 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 9. Click on "Quit" to quit  
 
 ## Notes:
-
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers that don't have Python install.
-5. I can also provide upon request the stand-alone version for Windows (MM-fit-v2.0.exe).    
+4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers that don't have Python install:
+      /!\ python 3.10 environement/!\
+      ```bash
+      conda create -n "py310" python=3.10
+      conda activate py310
+      conda install matplotlib numpy scipy pyinstaller
+      ```
+   For windows
+   ```bash
+      pyinstaller -F MM-vXX.py
+     ```
+   For Mac
+    ```bash
+      pyinstaller -F MM-vXX.py
+       ```
+   For Linux
+      ```bash
+      pyinstaller -F MM-vXX.py --hidden-import='PIL._tkinter_finder'
+      ```
+   /!\ For the first run be patient the embeded matplotlib need to create fontq and it takes sometimes.
+   
+5. I can also provide upon request the stand-alone version for Windows/MAC/Linux (MM-fit-v2.0.exe).    
