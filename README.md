@@ -128,6 +128,6 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
       pyinstaller -F MM-vXX.py --hidden-import='PIL._tkinter_finder'
    ```
 
-   /!\ For the first run be patient the embeded matplotlib need to create fontq and it takes sometimes.
+   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes.
    
-6. I can also provide upon request the stand-alone version for Windows/MAC/Linux (MM-fit-v2.0.exe).    
+6. I can also provide upon request the stand-alone version for Windows/MAC/Linux (ex MM-fit-v2.0.exe).    
