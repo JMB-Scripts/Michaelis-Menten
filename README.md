@@ -46,7 +46,7 @@ python MM-Fit-vXX.py
 or for Window (upon request, cause the executable is relatively large around 200Mo)
 double click onthe file:
 
-MM-fit-v16.exe
+MM-fit-v3.0.exe
 
 ![image](https://github.com/user-attachments/assets/17b7c625-2fb1-4ed7-8540-0ff23b1fdbfc)
 
@@ -130,4 +130,16 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes.
    
-6. I can also provide upon request the stand-alone version for Windows/MAC/Linux (ex MM-fit-v2.0.exe).    
+6. Stand-alone versions are here :
+      For Mac (if it doesn't start go to Privacy & Security and click on open anyway) :
+
+https://cloud.univ-grenoble-alpes.fr/s/g7pWB2xpNcJrRmS
+
+     For Windows :
+     
+https://cloud.univ-grenoble-alpes.fr/s/TerC3LbTkKQKWZ4
+
+      For Linux:
+
+https://cloud.univ-grenoble-alpes.fr/s/amLCax7dQXZrDtn
+   
