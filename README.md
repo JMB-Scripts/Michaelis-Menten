@@ -3,6 +3,8 @@
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
 The last version of the script is MM-fit-v3.0.py
 
+It was written for UGA students to use during biochemistry practicals in L2, L3, and M1.
+
 ## Features:
 
 - Graphical table to manually input data.
@@ -43,8 +45,8 @@ python MM-Fit-vXX.py
 
 ![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
 
-or for Window (upon request, cause the executable is relatively large around 200Mo)
-double click onthe file:
+or for Window, MAc.app, or Linux (see standalone, cause the executable is relatively large around 200Mo)
+double click on the file:
 
 MM-fit-v3.0.exe
 
