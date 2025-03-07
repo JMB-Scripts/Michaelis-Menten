@@ -1,9 +1,13 @@
 # Michaelis-Menten Equation Fitting Tool
+It was written for UGA students to use during biochemistry practicals in L2, L3, and M1.
 
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
-The last version of the script is MM-fit-v3.0.py
 
-It was written for UGA students to use during biochemistry practicals in L2, L3, and M1.
+If you found this project useful, used it, or needed to customize it (e.g., adding more lines or columns), please let me know! Your feedback is essential to help me improve and continue this project. You can reach out to me directly at [reach out to me via email](jean-marie.bourhis[at]univ-grenoble-alpes.fr).
+
+Stand-alone version for Windows, Mac, Linux are avalible at the end of the page
+
+The last version of the script is MM-fit-v3.0.py
 
 ## Features:
 
@@ -45,7 +49,7 @@ python MM-Fit-vXX.py
 
 ![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
 
-or for Window, MAc.app, or Linux (see standalone, cause the executable is relatively large around 200Mo)
+or for Window, MAc.app, or Linux (see stand-alone, cause the executable is relatively large around 200Mo)
 double click on the file:
 
 MM-fit-v3.0.exe
@@ -130,7 +134,7 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
       pyinstaller -F MM-vXX.py --hidden-import='PIL._tkinter_finder'
    ```
 
-   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes.
+   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
    
 6. Stand-alone versions are here :
       For Mac (if it doesn't start go to Privacy & Security and click on open anyway) :
