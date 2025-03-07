@@ -138,7 +138,7 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
    
 6. Stand-alone versions are here :
 
-   For Mac :
+     For Mac :
 
 https://cloud.univ-grenoble-alpes.fr/s/g7pWB2xpNcJrRmS
 
