@@ -3,7 +3,7 @@ It was written for UGA students to use during biochemistry practicals in L2, L3,
 
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
 
-If you found this project useful, used it, or needed to customize it (e.g., adding more lines or columns), please let me know! Your feedback is essential to help me improve and continue this project. You can reach out to me directly at [reach out to me via email](jean-marie.bourhis[at]univ-grenoble-alpes.fr).
+If you found this project useful, used it, or needed to customize it (e.g., adding more lines or columns), please let me know! Your feedback is essential to help me improve and continue this project. You can reach out to me directly at [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
 Stand-alone version for Windows, Mac, Linux are avalible at the end of the page
 
