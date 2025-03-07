@@ -137,9 +137,12 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
    
 6. Stand-alone versions are here :
-      For Mac (if it doesn't start go to Privacy & Security and click on open anyway) :
+
+   For Mac :
 
 https://cloud.univ-grenoble-alpes.fr/s/g7pWB2xpNcJrRmS
+
+(if it doesn't start go to Privacy & Security and click on open anyway) 
 
      For Windows :
      
