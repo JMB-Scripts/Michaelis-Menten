@@ -117,6 +117,9 @@ At the bottom of the plot you can see residuals (Exp values - Fit values) with a
 
 5. Click LB plot to draw Lineweaver and Burk Plot to get the plot :
 
+![image](https://github.com/user-attachments/assets/38529ea9-a89b-49f3-83c1-0e765ed9dcd8)
+
+
 Check on Display linear fit to get values from the linear regression
 
 ![image](https://github.com/user-attachments/assets/7d5c320f-3328-48ac-be38-93f00f821962)
@@ -138,8 +141,9 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
    Note that exclude values appears as crosses on the plot 
 
    MM-plot
+   
+![image](https://github.com/user-attachments/assets/ff7b2275-4092-41e2-bb0c-a8689f0440a7)
 
-   ![image](https://github.com/user-attachments/assets/cd7756ea-7d2f-4bf8-8897-b7920facb933)
 
    Or LB plot 
 
