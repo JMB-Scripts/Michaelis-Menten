@@ -7,26 +7,52 @@ If you found this project useful, used it, or needed to customize it (e.g., addi
 Your feedback is essential to help me improve and continue this project. 
 You can reach out to me directly at [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
-Stand-alone version for Windows, Mac, Linux are avalible at the end of the page
+Stand-alone version for Windows, Mac, Linux (is coming) are avalible at the end of the page
+The last version of the script is MM-fit-Qt-v3.5.py
 
-The last version of the script is MM-fit-v3.0.py
+## Version 3.5 Major update
+🔄 Version 3.5 — Latest Release
+
+Released: April 2025
+Status: Stable
+
+✨ New Features
+	•	Multi-column selector: Added a dropdown to select both substrate concentration and velocity columns.
+	•	Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-         parses tabular data.
+	•	Clear separation between data and control: UI is now split more clearly into a table area and a control             panel on the right.
+	•	Autoscale on plot: The plot now autoscales and includes dynamic titles and axis labels based on selected columns.
+	•	Output display: Fit results for V_{\max} and K_m are now shown in a clear text box.
+	•	Save plot functionality: Added a “Save Plot” button to export the fit graph as a PNG image.
+
+🛠 Improvements
+	•	GUI layout rewritten using QGridLayout and QVBoxLayout for better readability and structure.
+	•	Error handling for non-numeric or missing data is now more robust.
+	•	Fitting function supports NaN filtering and pre-checks for fit quality.
+
+🧼 UI Enhancements
+		•	Simplified and modernized plot aesthetics.
 
 ## Features:
 
-- Graphical table to manually input data.
-- Paste functionality compatible with data copied from Excel.
-- Real-time curve fitting to the Michaelis-Menten equation.
-- Visual representation of observed data and fitted curve.
-- Output of estimated \( V_{max} \) and \( K_m \) parameters in scientific notation.
-
+	•	Paste kinetic data directly from Excel.
+	•	Select substrate concentration and velocity columns.
+	•	Fit data to the Michaelis-Menten equation using nonlinear regression.
+	•	View fitted V_{\max}, K_m, and plot the fitted curve.
+   •  View Lineweaver-Burk plot and have the liear regression
+   •  Exclude odd value from the fit for MM and LB
+	•	Clean, interactive GUI built with PyQt5.
+	•	Save plots as PNG.
+   •  Possibility to print MM plot and LB plot    
+ 
 ## Dependencies:
 
-- `webbrowser`
-- `numpy`
-- `tkinter`
-- `scipy`
-- `matplotlib`
-
+The following Python libraries are required:
+	•	PyQt5
+	•	numpy
+	•	pandas
+	•	matplotlib
+	•	scipy
+ 
 ## Installation:
 
 Ensure you have Python installed on your system.
@@ -34,16 +60,26 @@ Ensure you have Python installed on your system.
 Install the required packages using `pip`:
 
 ```bash
-pip install numpy scipy matplotlib
+# Create and activate a virtual environment (optional but recommended)
+python -m venv mmfit-env
+source mmfit-env/bin/activate
+# On Windows use: mmfit-env\Scripts\activate
 ```
-or conda 
+
+# Install required packages
 ```bash
-conda install numpy scipy matplotlib
+pip install PyQt5 numpy pandas matplotlib scipy
+```
+or 
+```bash
+conda create -n mmfit-env python=3.12
+conda activate mmfit-env
+conda install pyqt numpy pandas matplotlib scipy
 ```
 
 ## Usage:
 
-1. Run the script:
+1. If python is present on your system then run the script:
 
 ```bash
 python MM-Fit-vXX.py
@@ -51,62 +87,66 @@ python MM-Fit-vXX.py
 
 ![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
 
-or for Window, MAc.app, or Linux (see stand-alone, cause the executable is relatively large around 200Mo)
+or use the stand-alone for Window, Mac.app, or Linux 
 double click on the file:
 
-MM-fit-v3.0.exe
+MM-fit-Qt-v3.5.exe
 
 ![image](https://github.com/user-attachments/assets/17b7c625-2fb1-4ed7-8540-0ff23b1fdbfc)
 
-
 2. A window will popup:
    
-<img width="973" alt="image" src="https://github.com/user-attachments/assets/42e46f5b-7388-47eb-a82c-80d10bd4287c">
+![image](https://github.com/user-attachments/assets/479bd06b-3035-472b-a6d3-3d96dfb1216d)
 
-
-4. Use the graphical interface to input data manually or paste it directly from cells copy in Excel using the "Paste Data from Excel" button.
-
+4. Copy cells in Excel (make sure that values are in scientific format)
 
 ![image](https://github.com/user-attachments/assets/539d8df2-01a1-426e-b8d9-90d530a0bb8b)
 
-The GUI after pasting values from Excel
+5. Then on the GUI click on "1- Paste from Excel"
    
-<img width="973" alt="image" src="https://github.com/user-attachments/assets/fe30a5dc-d999-4ac4-a610-0777f6c8a9a8">
+![image](https://github.com/user-attachments/assets/ec6441c5-dc20-4d84-88d7-c6fd767aefb3)
+
+4. Click on "2- MM-Fit" to fit the Michaelis-Menten equation and visualize the results.
+
+Micahelis Menten representation with the fit (Km, Vmax, and R^2) :
 
 
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/f9973e38-fea9-4a9a-891a-4ffda44d029d" />
 
-4. Click on "Fit Michaelis-Menten " to fit the Michaelis-Menten equation and visualize the results.
+At the bottom of the plot you can see residuals (Exp values - Fit values) with a cone of +/- 10% from the fit value. 
 
-Micahelis Menten representation with the fit (Km, Vmax, and R^2 to estimate of the quality of the fit) :
+5. Click LB plot to draw Lineweaver and Burk Plot to get the plot :
 
+Check on Display linear fit to get values from the linear regression
 
-<img width="1112" alt="image" src="https://github.com/user-attachments/assets/85dc4407-832b-4be5-9382-aa553de924d3">
+![image](https://github.com/user-attachments/assets/7d5c320f-3328-48ac-be38-93f00f821962)
 
-
-Close the MM fit window to get back to the GUI 
-
-5. Click on Draw Lineweaver and Burk Plot to get the representation :
-
-<img width="929" alt="image" src="https://github.com/user-attachments/assets/bccc213a-0d52-4fff-a473-057ca0e8184c">
-
-<img width="1112" alt="image" src="https://github.com/user-attachments/assets/a6d62974-9389-432e-b782-04c3b33e7255">
-
+you can click on print to print or save as PDF
 
 Close the Lineweaver and Burk Plot window to get back to the GUI 
 
-6. Click on "Exclude data" to exclude some value to improve the fit for one or several series. 
+6. Click on "4- Exclude data" to exclude some value to improve the fit for one or several series. 
 
-<img width="522" alt="image" src="https://github.com/user-attachments/assets/fa464501-43b3-4a0d-8125-99f0ed0a69c9">
+![image](https://github.com/user-attachments/assets/241a2da7-ecb9-4a4c-a2c1-4cdc7ff61475)
 
-   Check the values that seem a bit odd to exclude them for the fit and Lineweaver and Burk Plot:
 
-<img width="522" alt="image" src="https://github.com/user-attachments/assets/dbb9a045-8072-48ee-bd95-4ad756e60390">
+   Check the values that seem a bit odd to exclude them for the MM fit and Lineweaver and Burk Plot:
 
-   then click on "Apply and Refit", the new fit appears without the exclude values.
+![image](https://github.com/user-attachments/assets/3ec5faeb-17bb-43ac-9091-bc093fad8af2)
    
-<img width="1112" alt="image" src="https://github.com/user-attachments/assets/5af7d587-2cfc-4371-8d7d-88365c3c9416">
+   Then click on "Apply and Refit", the new fit appears without the exclude values. 
+   Note that exclude values appears as crosses on the plot 
 
-7. Click on "Reset Data" to clear all the fields and reset checked checboxes.
+   MM-plot
+
+   ![image](https://github.com/user-attachments/assets/cd7756ea-7d2f-4bf8-8897-b7920facb933)
+
+   Or LB plot 
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/6a0fb587-aeca-413e-8bff-27b5c9d5aee4" />
+
+
+7. Click on "Reset " to clear all the fields and reset checked checboxes.
    
 9. Click on "Quit" to quit  
 
@@ -114,15 +154,8 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. It's possible to make an exe file for Windows using "pyinstaller", to distribute the script on computers that don't have Python install:
+4. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
-   /!\ python 3.10 environement/!\
-   
-      ```bash
-      conda create -n "py310" python=3.10
-      conda activate py310
-      conda install matplotlib numpy scipy pyinstaller
-      ```
    For windows
    ```bash
       pyinstaller -F MM-vXX.py
@@ -133,7 +166,7 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
    ```
    For Linux
    ```bash
-      pyinstaller -F MM-vXX.py --hidden-import='PIL._tkinter_finder'
+      pyinstaller -F MM-vXX.py 
    ```
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
@@ -142,15 +175,16 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 
      For Mac :
 
-https://cloud.univ-grenoble-alpes.fr/s/g7pWB2xpNcJrRmS
+coming soon
 
 (if it doesn't start go to Privacy & Security and click on open anyway) 
 
      For Windows :
      
-https://cloud.univ-grenoble-alpes.fr/s/TerC3LbTkKQKWZ4
+coming soon
 
       For Linux:
 
-https://cloud.univ-grenoble-alpes.fr/s/amLCax7dQXZrDtn
+coming soon
    
+Don't hesitate to reach me if you need help setting it up  [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
