@@ -43,14 +43,22 @@ Status: Stable
 ## Features:
 
 	•	Paste kinetic data directly from Excel.
+ 
 	•	Select substrate concentration and velocity columns.
+ 
 	•	Fit data to the Michaelis-Menten equation using nonlinear regression.
+ 
 	•	View fitted V_{\max}, K_m, and plot the fitted curve.
-   •  View Lineweaver-Burk plot and have the liear regression
-   •  Exclude odd value from the fit for MM and LB
+ 
+   	•  	View Lineweaver-Burk plot and have the liear regression
+    
+   	• 	 Exclude odd value from the fit for MM and LB
+    
 	•	Clean, interactive GUI built with PyQt5.
-	•	Save plots as PNG.
-   •  Possibility to print MM plot and LB plot    
+ 
+	•	Save plots as PNG or print them
+ 	
+  	•  	Possibility to print MM plot and LB plot    
  
 ## Dependencies:
 
