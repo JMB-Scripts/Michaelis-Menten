@@ -16,12 +16,20 @@ The last version of the script is MM-fit-Qt-v3.5.py
 Released: April 2025
 Status: Stable
 
-✨ New Features
+✨ New Features:
+
+	•	Unlimited Series or data points 
+ 
 	•	Multi-column selector: Added a dropdown to select both substrate concentration and velocity columns.
-	•	Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-         parses tabular data.
-	•	Clear separation between data and control: UI is now split more clearly into a table area and a control             panel on the right.
+ 
+	•	Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-parses tabular data.
+ 
+	•	Clear separation between data and control: UI is now split more clearly into a table area and a control panel on the right.
+ 
 	•	Autoscale on plot: The plot now autoscales and includes dynamic titles and axis labels based on selected columns.
+ 
 	•	Output display: Fit results for V_{\max} and K_m are now shown in a clear text box.
+ 
 	•	Save plot functionality: Added a “Save Plot” button to export the fit graph as a PNG image.
 
 🛠 Improvements
@@ -113,7 +121,7 @@ Micahelis Menten representation with the fit (Km, Vmax, and R^2) :
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/f9973e38-fea9-4a9a-891a-4ffda44d029d" />
 
-At the bottom of the plot you can see residuals (Exp values - Fit values) with a cone of +/- 10% from the fit value. 
+At the bottom of the plot you can see residuals (Exp values - Fit values) with a color cone for values at +/- 10% from the fit value. 
 
 5. Click LB plot to draw Lineweaver and Burk Plot to get the plot :
 
@@ -124,9 +132,9 @@ Check on Display linear fit to get values from the linear regression
 
 ![image](https://github.com/user-attachments/assets/7d5c320f-3328-48ac-be38-93f00f821962)
 
-you can click on print to print or save as PDF
+you can click on print to print or to save as PDF
 
-Close the Lineweaver and Burk Plot window to get back to the GUI 
+Close the LB plot window to get back to the GUI 
 
 6. Click on "4- Exclude data" to exclude some value to improve the fit for one or several series. 
 
@@ -149,8 +157,7 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 
 <img width="960" alt="image" src="https://github.com/user-attachments/assets/6a0fb587-aeca-413e-8bff-27b5c9d5aee4" />
 
-
-7. Click on "Reset " to clear all the fields and reset checked checboxes.
+7. Click on "Reset " to clear all the fields and reset checked checboxes, and start over.
    
 9. Click on "Quit" to quit  
 
@@ -158,7 +165,8 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
+4. /!\ TAke only the values not the text.
+5. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
    For windows
    ```bash
@@ -179,16 +187,22 @@ Close the Lineweaver and Burk Plot window to get back to the GUI
 
      For Mac :
 
-coming soon
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/QJoooDCMBgKrCn2)
 
 (if it doesn't start go to Privacy & Security and click on open anyway) 
 
      For Windows :
-     
-coming soon
+
+Just one file (it will be slow start, but can be place anywhere)
+
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
+
+(the exe files plus one folder for libraries (start faster, but you need to keep the exe close to the libraries folder)
+
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
 
       For Linux:
 
-coming soon
+	coming soon
    
 Don't hesitate to reach me if you need help setting it up  [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
