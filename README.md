@@ -185,13 +185,13 @@ Close the LB plot window to get back to the GUI
    
 6. Stand-alone versions are here :
 
-     For Mac :
+    => For Mac :
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/QJoooDCMBgKrCn2)
 
 (if it doesn't start go to Privacy & Security and click on open anyway) 
 
-     For Windows :
+     => For Windows :
 
 Just one file (it will be slow start, but can be place anywhere)
 
@@ -201,7 +201,7 @@ Just one file (it will be slow start, but can be place anywhere)
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
 
-      For Linux:
+     => For Linux:
 
 	coming soon
    
