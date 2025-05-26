@@ -5,9 +5,10 @@ This tool allows users to input data for substrate concentration (`S0`) and obse
 
 If you found this project useful, used it, or needed to customize it (e.g., adding more lines or columns), please let me know! 
 Your feedback is essential to help me improve and continue this project. 
-You can reach out to me directly at [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
+You can [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
 Stand-alone version for Windows, Mac, Linux (is coming) are avalible at the end of the page
+
 The last version of the script is MM-fit-Qt-v3.5.py
 
 ## Version 3.5 Major update
