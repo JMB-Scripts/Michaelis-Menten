@@ -18,47 +18,47 @@ Status: Stable
 
 ✨ New Features:
 
-	•	Unlimited Series or data points 
+	Unlimited Series or data points 
  
-	•	Multi-column selector: Added a dropdown to select both substrate concentration and velocity columns.
+	Multi-column selector: Added a dropdown to select both substrate concentration and velocity columns.
  
-	•	Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-parses tabular data.
+	Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-parses tabular data.
  
-	•	Clear separation between data and control: UI is now split more clearly into a table area and a control panel on the right.
+	Clear separation between data and control: UI is now split more clearly into a table area and a control panel on the right.
  
-	•	Autoscale on plot: The plot now autoscales and includes dynamic titles and axis labels based on selected columns.
+	Autoscale on plot: The plot now autoscales and includes dynamic titles and axis labels based on selected columns.
  
-	•	Output display: Fit results for V_{\max} and K_m are now shown in a clear text box.
+	Output display: Fit results for V_{\max} and K_m are now shown in a clear text box.
  
-	•	Save plot functionality: Added a “Save Plot” button to export the fit graph as a PNG image.
+	Save plot functionality: Added a “Save Plot” button to export the fit graph as a PNG image.
 
-🛠 Improvements
-	•	GUI layout rewritten using QGridLayout and QVBoxLayout for better readability and structure.
-	•	Error handling for non-numeric or missing data is now more robust.
-	•	Fitting function supports NaN filtering and pre-checks for fit quality.
+🛠 Improvements :
 
-🧼 UI Enhancements
-		•	Simplified and modernized plot aesthetics.
+	GUI layout rewritten using QGridLayout and QVBoxLayout for better readability and structure.
+	Error handling for non-numeric or missing data is now more robust.
+	Fitting function supports NaN filtering and pre-checks for fit quality.
+ 
+
 
 ## Features:
 
-	•	Paste kinetic data directly from Excel.
+	Paste kinetic data directly from Excel.
  
-	•	Select substrate concentration and velocity columns.
+	Select substrate concentration and velocity columns.
  
-	•	Fit data to the Michaelis-Menten equation using nonlinear regression.
+	Fit data to the Michaelis-Menten equation using nonlinear regression.
  
-	•	View fitted V_{\max}, K_m, and plot the fitted curve.
+ 	View fitted V_{\max}, K_m, and plot the fitted curve.
  
-   	•  	View Lineweaver-Burk plot and have the liear regression
+   	View Lineweaver-Burk plot and have the liear regression
     
-   	• 	 Exclude odd value from the fit for MM and LB
+   	Exclude odd value from the fit for MM and LB
     
-	•	Clean, interactive GUI built with PyQt5.
+	Clean, interactive GUI built with PyQt5.
  
-	•	Save plots as PNG or print them
+	Save plots as PNG or print them MM plot and LB plot  
  	
-  	•  	Possibility to print MM plot and LB plot    
+  	
  
 ## Dependencies:
 
@@ -90,7 +90,7 @@ or
 ```bash
 conda create -n mmfit-env python=3.12
 conda activate mmfit-env
-conda install pyqt numpy pandas matplotlib scipy
+conda install pyqt5 numpy pandas matplotlib scipy
 ```
 
 ## Usage:
@@ -103,7 +103,7 @@ python MM-Fit-vXX.py
 
 ![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
 
-or use the stand-alone for Window, Mac.app, or Linux 
+or use the stand-alone for Window, Mac.app, or Linux (link below)
 double click on the file:
 
 MM-fit-Qt-v3.5.exe
@@ -173,7 +173,7 @@ Close the LB plot window to get back to the GUI
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. /!\ TAke only the values not the text.
+4. /!\ TAke only the values not the text /!\.
 5. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
    For windows
