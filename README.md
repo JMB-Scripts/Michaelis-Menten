@@ -19,36 +19,44 @@ Status: Stable
 ✨ New Features:
 
 1- Unlimited Series or data points 
+
 2- Multi-column selector: Added a dropdown to select both substrate concentration and velocity columns.
+
 3- Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-parses tabular data.
+
 4- Clear separation between data and control: UI is now split more clearly into a table area and a control panel on the right.
+
 5- Autoscale on plot: The plot now autoscales and includes dynamic titles and axis labels based on selected columns.
+
 6- Output display: Fit results for V_{\max} and K_m are now shown in a clear text box.
+
 7- Save plot functionality: Added a “Save Plot” button to export the fit graph as a PNG image.
 
 🛠 Improvements :
 
 1- GUI layout rewritten using QGridLayout and QVBoxLayout for better readability and structure.
+
 2- Error handling for non-numeric or missing data is now more robust.
+
 3- Fitting function supports NaN filtering and pre-checks for fit quality.
  
 ## Features:
 
-	Paste kinetic data directly from Excel.
+1- Paste kinetic data directly from Excel.
  
-	Select substrate concentration and velocity columns.
+2- Select substrate concentration and velocity columns.
  
-	Fit data to the Michaelis-Menten equation using nonlinear regression.
+3- Fit data to the Michaelis-Menten equation using nonlinear regression.
  
- 	View fitted V_{\max}, K_m, and plot the fitted curve.
+4- View fitted V_{\max}, K_m, and plot the fitted curve.
  
-   	View Lineweaver-Burk plot and have the liear regression
+5- View Lineweaver-Burk plot and have the lienar regression
     
-   	Exclude odd value from the fit for MM and LB
+6- Exclude odd value from the fit for MM and LB
     
-	Clean, interactive GUI built with PyQt5.
+7- Clean, interactive GUI built with PyQt5.
  
-	Save plots as PNG or print them MM plot and LB plot  
+8- Save plots as PNG or print them MM plot and LB plot  
  	
   	
  
