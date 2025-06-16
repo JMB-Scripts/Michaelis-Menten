@@ -196,7 +196,7 @@ Close the LB plot window to get back to the GUI
 
 => For Mac :
 
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/QJoooDCMBgKrCn2)
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/DTTYdZw3HcfoTG2)
 
 (if it doesn't start go to Privacy & Security and click on open anyway) 
 
