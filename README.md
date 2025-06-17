@@ -93,6 +93,9 @@ conda create -n mmfit-env python=3.12
 conda activate mmfit-env
 conda install pyqt5 numpy pandas matplotlib scipy
 ```
+## Video tutorial:
+
+https://github.com/user-attachments/assets/711b63c7-8805-4179-b599-67a5e412c16f
 
 ## Usage:
 
