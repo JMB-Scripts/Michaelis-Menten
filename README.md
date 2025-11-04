@@ -1,7 +1,7 @@
 # Michaelis-Menten Equation Fitting Tool
-It was written for UGA students to use during biochemistry practicals in L2, L3, and M1.
+It was written for University of Grenoble ALpes (UGA) students for biochemistry practicals in L2, L3, and M1.
 
-This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.
+This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.(no need of expansive software)
 
 If you found this project useful, used it, or needed to customize it (e.g., adding more lines or columns), please let me know! 
 Your feedback is essential to help me improve and continue this project. 
@@ -9,39 +9,9 @@ You can [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
 Stand-alone version for Windows, Mac, Linux (is coming) are avalible at the end of the page
 
-The last version of the script is MM-fit-Qt-v3.5.py
+The last version of the script is MM-fit-v5.0.py
 
-## Version 3.5 Major update
-🔄 Version 3.5 — Latest Release
-
-Released: April 2025
-Status: Stable
-
-✨ New Features:
-
-1- Unlimited Series or data points 
-
-2- Multi-column selector: Added a dropdown to select both substrate concentration and velocity columns.
-
-3- Dynamic Excel-style paste: Replaced fixed input system with an Excel-compatible “Paste” button  that auto-parses tabular data.
-
-4- Clear separation between data and control: UI is now split more clearly into a table area and a control panel on the right.
-
-5- Autoscale on plot: The plot now autoscales and includes dynamic titles and axis labels based on selected columns.
-
-6- Output display: Fit results for V_{\max} and K_m are now shown in a clear text box.
-
-7- Save plot functionality: Added a “Save Plot” button to export the fit graph as a PNG image.
-
-🛠 Improvements :
-
-1- GUI layout rewritten using QGridLayout and QVBoxLayout for better readability and structure.
-
-2- Error handling for non-numeric or missing data is now more robust.
-
-3- Fitting function supports NaN filtering and pre-checks for fit quality.
- 
-## Features:
+## General Features:
 
 1- Paste kinetic data directly from Excel.
  
@@ -58,8 +28,46 @@ Status: Stable
 7- Clean, interactive GUI built with PyQt5.
  
 8- Save plots as PNG or print them MM plot and LB plot  
- 	
-  	
+
+
+## Version 5.0 Major update
+🔄 Version 5.0 — Latest Release
+
+Released: Novembre 2025
+Status: Stable
+
+✨ New Features:
+
+1- High-Resolution PDF/Print Reports:
+
+    The simple "Print" function (which just printed a low-res screen capture) has been completely replaced.
+
+    The new "Print Report" button generates a professional, multi-part report on a single A4 page.
+
+    High-Resolution Plot (600 DPI): The Matplotlib figure is saved to an in-memory buffer at 600 DPI and then painted onto the PDF, ensuring a sharp, publication-quality image.
+
+    Data Table on Report: The report now includes the full data table (minus the "Include" column) formatted below the plot.
+
+2- Advanced Data Table Printing:
+
+    The printed table is drawn manually to the PDF canvas for full control.
+
+    Red Highlighting: All excluded data (either from an unchecked row or the "Exclude" dialog) is now printed in red for easy identification.
+
+    Scientific Notation: All numbers in the printed table are formatted in scientific notation (X.XXE-Y) for a tight, clean, and uniform look.
+
+3- Statistical Error Analysis:
+
+    The core fitting logic in fit_data has been upgraded to calculate the standard error (SE) and relative standard error (%RSE) for both Vmax and Km.
+
+    These errors are now displayed directly in the plot legends for both the Michaelis-Menten and Lineweaver-Burk plots, e.g., Vmax = 4.52e-07 (± 1.7e-08 | 4%).
+
+🛠 Improvements :
+
+1- Modern Styling: All buttons now have a modern, flat-style look with CSS-like stylesheets for different states (action, utility, warning, quit).
+
+2- Pastel Colormap: The default viridis colormap has been replaced with the Set2 (pastel) colormap for clearer, more distinct plots.
+
  
 ## Dependencies:
 
@@ -70,7 +78,7 @@ The following Python libraries are required:
 	•	matplotlib
 	•	scipy
  
-## Installation:
+## Installation from the script:
 
 Ensure you have Python installed on your system.
 
@@ -92,6 +100,10 @@ or
 conda create -n mmfit-env python=3.12
 conda activate mmfit-env
 conda install pyqt5 numpy pandas matplotlib scipy
+```
+# Run the script:
+```bash
+python MM-fit-v5.0.py
 ```
 ## Video tutorial:
 
@@ -195,7 +207,7 @@ Close the LB plot window to get back to the GUI
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
    
-6. Stand-alone versions are here :
+6. Stand-alone versions are here for the old v3.5 the 5.0are coming:
 
 => For Mac :
 
