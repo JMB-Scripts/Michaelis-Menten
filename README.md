@@ -1,7 +1,7 @@
 # Michaelis-Menten Equation Fitting Tool
 It was written for University of Grenoble ALpes (UGA) students for biochemistry practicals in L2, L3, and M1.
 
-This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily.(no need of expansive software)
+This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily. No need of an expansive software to make non linear regression
 
 If you found this project useful, used it, or needed to customize it (e.g., adding more lines or columns), please let me know! 
 Your feedback is essential to help me improve and continue this project. 
@@ -207,7 +207,7 @@ Close the LB plot window to get back to the GUI
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
    
-6. Stand-alone versions are here for the old v3.5 the 5.0are coming:
+6. Stand-alone versions are here for the old v3.5 (new v5.0 are coming):
 
 => For Mac :
 
