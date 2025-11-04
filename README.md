@@ -1,5 +1,5 @@
 # Michaelis-Menten Equation Fitting Tool
-It was written for University of Grenoble ALpes (UGA) students for biochemistry practicals in L2, L3, and M1.
+It was written for University Grenoble Alpes (UGA) students for biochemistry practicals in L2, L3, and M1.
 
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily. No need of an expansive software to make non linear regression
 
