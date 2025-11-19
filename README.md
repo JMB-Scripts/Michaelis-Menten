@@ -211,7 +211,7 @@ Close the LB plot window to get back to the GUI
 
 => For Mac :
 
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/DTTYdZw3HcfoTG2)
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/bgsGDbjHcMdR3fS)
 
 (if it doesn't start go to Privacy & Security and click on open anyway) 
 
@@ -219,14 +219,13 @@ Close the LB plot window to get back to the GUI
 
 Just one file (it will be slow start, but can be place anywhere)
 
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/H2GMHR3yLCHNzKY)
 
-(the exe files plus one folder for libraries (start faster, but you need to keep the exe close to the libraries folder)
-
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
 
 => For Linux:
 
-coming soon
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/cdAbePCEzCoDzrF)
+
+
    
 Don't hesitate to reach me if you need help setting it up  [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
