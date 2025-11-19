@@ -207,7 +207,7 @@ Close the LB plot window to get back to the GUI
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
    
-6. Stand-alone versions are here the new v5.0:
+## Stand-alone versions are here v5.0 (last release):
 
 => For Mac :
 
