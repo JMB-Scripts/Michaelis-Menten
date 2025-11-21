@@ -1,5 +1,5 @@
 # Michaelis-Menten Equation Fitting Tool
-It was written for University of Grenoble ALpes (UGA) students for biochemistry practicals in L2, L3, and M1.
+It was written for University Grenoble Alpes (UGA) students for biochemistry practicals in L2, L3, and M1.
 
 This tool allows users to input data for substrate concentration (`S0`) and observed reaction rates (`v0`) to fit the Michaelis-Menten equation. The application provides a graphical user interface to input the data and visualize the curve-fitting results easily. No need of an expansive software to make non linear regression
 
@@ -7,7 +7,7 @@ If you found this project useful, used it, or needed to customize it (e.g., addi
 Your feedback is essential to help me improve and continue this project. 
 You can [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
-Stand-alone version for Windows, Mac, Linux (is coming) are avalible at the end of the page
+Stand-alone version for Windows, Mac, Linux are avalible to download at the end of the README
 
 The last version of the script is MM-fit-v5.0.py
 
@@ -30,8 +30,8 @@ The last version of the script is MM-fit-v5.0.py
 8- Save plots as PNG or print them MM plot and LB plot  
 
 
-## Version 5.0 Major update
-🔄 Version 5.0 — Latest Release
+## Version 5.x Major update
+🔄 Version 5.5 — Latest Release
 
 Released: Novembre 2025
 Status: Stable
@@ -103,7 +103,7 @@ conda install pyqt5 numpy pandas matplotlib scipy
 ```
 # Run the script:
 ```bash
-python MM-fit-v5.0.py
+python MM-fit-v5.x.py
 ```
 ## Video tutorial:
 
@@ -114,72 +114,73 @@ https://github.com/user-attachments/assets/711b63c7-8805-4179-b599-67a5e412c16f
 1. If python is present on your system then run the script:
 
 ```bash
-python MM-Fit-vXX.py
+python MM-Fit-v5.x.py
 ```
-
-![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
 
 or use the stand-alone for Window, Mac.app, or Linux (link below)
 double click on the file:
 
-MM-fit-Qt-v3.5.exe
+MM-fit-v5.0.exe
 
-![image](https://github.com/user-attachments/assets/17b7c625-2fb1-4ed7-8540-0ff23b1fdbfc)
+2. A window will popup (beware first start is ver very long 40-45 sec):
 
-2. A window will popup:
-   
-![image](https://github.com/user-attachments/assets/479bd06b-3035-472b-a6d3-3d96dfb1216d)
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/e5399fe8-e584-432b-a977-c90a83b471b0" />
+
 
 4. Copy cells in Excel (make sure that values are in scientific format)
 
-![image](https://github.com/user-attachments/assets/539d8df2-01a1-426e-b8d9-90d530a0bb8b)
+<img width="305" height="285" alt="image" src="https://github.com/user-attachments/assets/7dee89df-d6ef-40aa-b69a-305efa6a66e2" />
 
-5. Then on the GUI click on "1- Paste from Excel"
+
+5. Then on the GUI click on "1- Paste from Excel". Data will appear in the left panel
    
-![image](https://github.com/user-attachments/assets/ec6441c5-dc20-4d84-88d7-c6fd767aefb3)
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/5969a39f-c3e6-4206-ac6b-572d5274e267" />
+
 
 4. Click on "2- MM-Fit" to fit the Michaelis-Menten equation and visualize the results.
 
-Micahelis Menten representation with the fit (Km, Vmax, and R^2) :
+Micahelis Menten representation with the fit (Km and error, Vmax and error, and R^2) :
+
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/822fb31a-e628-47ad-9a6e-a7e10128c1a7" />
 
 
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/f9973e38-fea9-4a9a-891a-4ffda44d029d" />
-
-At the bottom of the plot you can see residuals (Exp values - Fit values) with a color cone for values at +/- 10% from the fit value. 
+At the bottom of the plot you can see residuals (Exp values - Fit values) with a color cone for values at +/- 5% from the fit value. 
 
 5. Click LB plot to draw Lineweaver and Burk Plot to get the plot :
 
-![image](https://github.com/user-attachments/assets/38529ea9-a89b-49f3-83c1-0e765ed9dcd8)
-
+<img width="912" height="840" alt="image" src="https://github.com/user-attachments/assets/7b1f0d9b-0410-4654-8b97-4cac3123117b" />
 
 Check on Display linear fit to get values from the linear regression
 
-![image](https://github.com/user-attachments/assets/7d5c320f-3328-48ac-be38-93f00f821962)
+<img width="912" height="840" alt="image" src="https://github.com/user-attachments/assets/ef4039d6-35c6-49eb-ab16-dadb271f24da" />
 
-you can click on print to print or to save as PDF
+Note with the v5.0 you can change the X and Y scale using X or Y max and min box.
+
+You can click on print to print or save as PDF
 
 Close the LB plot window to get back to the GUI 
 
 6. Click on "4- Exclude data" to exclude some value to improve the fit for one or several series. 
 
-![image](https://github.com/user-attachments/assets/241a2da7-ecb9-4a4c-a2c1-4cdc7ff61475)
+<img width="1195" height="722" alt="image" src="https://github.com/user-attachments/assets/7ec6638a-8c05-4ecc-a61b-aabefbd05403" />
+
 
 
    Check the values that seem a bit odd to exclude them for the MM fit and Lineweaver and Burk Plot:
-
-![image](https://github.com/user-attachments/assets/3ec5faeb-17bb-43ac-9091-bc093fad8af2)
    
    Then click on "Apply and Refit", the new fit appears without the exclude values. 
    Note that exclude values appears as crosses on the plot 
 
    MM-plot
    
-![image](https://github.com/user-attachments/assets/ff7b2275-4092-41e2-bb0c-a8689f0440a7)
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/67b8c7ba-b231-4604-80c9-583a0ee61bcf" />
+
 
 
    Or LB plot 
 
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/6a0fb587-aeca-413e-8bff-27b5c9d5aee4" />
+<img width="912" height="840" alt="image" src="https://github.com/user-attachments/assets/ebe6701f-e620-46b8-82b0-afc3e64d840b" />
+
 
 7. Click on "Reset " to clear all the fields and reset checked checboxes, and start over.
    
@@ -189,44 +190,33 @@ Close the LB plot window to get back to the GUI
 1. Ensure all values are valid and in the correct format like 12E03  (for 12000 e.g., scientific notation) before fitting. 
 2. In principle, it should accept numbers with commas or dots i.e. 1,2E-03 or 1.2E-03.
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
-4. /!\ TAke only the values not the text /!\.
-5. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
+4. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
-   For windows
    ```bash
-      pyinstaller -F MM-vXX.py
-   ```
-   For Mac
-   ```bash
-      pyinstaller -F MM-vXX.py
-   ```
-   For Linux
-   ```bash
-      pyinstaller -F MM-vXX.py 
+      pyinstaller -F MM-v5.x.py
    ```
 
-   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
+   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solve in the 5.5 version)
    
-6. Stand-alone versions are here for the old v3.5 (new v5.0 are coming):
+## Stand-alone versions are here v5.x (last release):
 
 => For Mac :
 
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/DTTYdZw3HcfoTG2)
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/bgsGDbjHcMdR3fS)
 
-(if it doesn't start go to Privacy & Security and click on open anyway) 
+(if it doesn't start go to Privacy & Security and click on open anyway, as I'm an unidentify develloper) 
 
 => For Windows :
 
 Just one file (it will be slow start, but can be place anywhere)
 
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/H2GMHR3yLCHNzKY)
 
-(the exe files plus one folder for libraries (start faster, but you need to keep the exe close to the libraries folder)
 
-[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/y93FMDka3WsZaCS)
+=> For Linux (5.0):
 
-=> For Linux:
+[Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/cdAbePCEzCoDzrF)
 
-coming soon
+
    
 Don't hesitate to reach me if you need help setting it up  [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
