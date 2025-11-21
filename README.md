@@ -168,9 +168,6 @@ Close the LB plot window to get back to the GUI
 
    Check the values that seem a bit odd to exclude them for the MM fit and Lineweaver and Burk Plot:
    
-<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/8fb51cf6-d173-4506-9a46-1e6248e4ccae" />
-
-   
    Then click on "Apply and Refit", the new fit appears without the exclude values. 
    Note that exclude values appears as crosses on the plot 
 
