@@ -30,8 +30,8 @@ The last version of the script is MM-fit-v5.0.py
 8- Save plots as PNG or print them MM plot and LB plot  
 
 
-## Version 5.0 Major update
-🔄 Version 5.0 — Latest Release
+## Version 5.x Major update
+🔄 Version 5.5 — Latest Release
 
 Released: Novembre 2025
 Status: Stable
@@ -103,7 +103,7 @@ conda install pyqt5 numpy pandas matplotlib scipy
 ```
 # Run the script:
 ```bash
-python MM-fit-v5.0.py
+python MM-fit-v5.x.py
 ```
 ## Video tutorial:
 
@@ -114,7 +114,7 @@ https://github.com/user-attachments/assets/711b63c7-8805-4179-b599-67a5e412c16f
 1. If python is present on your system then run the script:
 
 ```bash
-python MM-Fit-vXX.py
+python MM-Fit-v5.x.py
 ```
 
 or use the stand-alone for Window, Mac.app, or Linux (link below)
@@ -193,18 +193,18 @@ Close the LB plot window to get back to the GUI
 4. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
    ```bash
-      pyinstaller -F MM-vXX.py
+      pyinstaller -F MM-v5.x.py
    ```
 
-   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
+   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solve in the 5.5 version)
    
-## Stand-alone versions are here v5.0 (last release):
+## Stand-alone versions are here v5.x (last release):
 
 => For Mac :
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/bgsGDbjHcMdR3fS)
 
-(if it doesn't start go to Privacy & Security and click on open anyway) 
+(if it doesn't start go to Privacy & Security and click on open anyway, as I'm an unidentify develloper) 
 
 => For Windows :
 
@@ -213,7 +213,7 @@ Just one file (it will be slow start, but can be place anywhere)
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/H2GMHR3yLCHNzKY)
 
 
-=> For Linux:
+=> For Linux (5.0):
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/cdAbePCEzCoDzrF)
 
