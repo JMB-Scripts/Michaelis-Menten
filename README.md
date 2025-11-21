@@ -117,69 +117,73 @@ https://github.com/user-attachments/assets/711b63c7-8805-4179-b599-67a5e412c16f
 python MM-Fit-vXX.py
 ```
 
-![image](https://github.com/user-attachments/assets/8ae1db6e-4fbf-4657-8744-4de65acd7025)
-
 or use the stand-alone for Window, Mac.app, or Linux (link below)
 double click on the file:
 
-MM-fit-Qt-v3.5.exe
+MM-fit-v5.0.exe
 
-![image](https://github.com/user-attachments/assets/17b7c625-2fb1-4ed7-8540-0ff23b1fdbfc)
+2. A window will popup (beware first start is ver very long 40-45 sec):
 
-2. A window will popup:
-   
-![image](https://github.com/user-attachments/assets/479bd06b-3035-472b-a6d3-3d96dfb1216d)
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/e5399fe8-e584-432b-a977-c90a83b471b0" />
+
 
 4. Copy cells in Excel (make sure that values are in scientific format)
 
-![image](https://github.com/user-attachments/assets/539d8df2-01a1-426e-b8d9-90d530a0bb8b)
+<img width="305" height="285" alt="image" src="https://github.com/user-attachments/assets/7dee89df-d6ef-40aa-b69a-305efa6a66e2" />
 
-5. Then on the GUI click on "1- Paste from Excel"
+
+5. Then on the GUI click on "1- Paste from Excel". Data will appear in the left panel
    
-![image](https://github.com/user-attachments/assets/ec6441c5-dc20-4d84-88d7-c6fd767aefb3)
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/5969a39f-c3e6-4206-ac6b-572d5274e267" />
+
 
 4. Click on "2- MM-Fit" to fit the Michaelis-Menten equation and visualize the results.
 
-Micahelis Menten representation with the fit (Km, Vmax, and R^2) :
+Micahelis Menten representation with the fit (Km and error, Vmax and error, and R^2) :
+
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/822fb31a-e628-47ad-9a6e-a7e10128c1a7" />
 
 
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/f9973e38-fea9-4a9a-891a-4ffda44d029d" />
-
-At the bottom of the plot you can see residuals (Exp values - Fit values) with a color cone for values at +/- 10% from the fit value. 
+At the bottom of the plot you can see residuals (Exp values - Fit values) with a color cone for values at +/- 5% from the fit value. 
 
 5. Click LB plot to draw Lineweaver and Burk Plot to get the plot :
 
-![image](https://github.com/user-attachments/assets/38529ea9-a89b-49f3-83c1-0e765ed9dcd8)
-
+<img width="912" height="840" alt="image" src="https://github.com/user-attachments/assets/7b1f0d9b-0410-4654-8b97-4cac3123117b" />
 
 Check on Display linear fit to get values from the linear regression
 
-![image](https://github.com/user-attachments/assets/7d5c320f-3328-48ac-be38-93f00f821962)
+<img width="912" height="840" alt="image" src="https://github.com/user-attachments/assets/ef4039d6-35c6-49eb-ab16-dadb271f24da" />
 
-you can click on print to print or to save as PDF
+Note with the v5.0 you can change the X and Y scale using X or Y max and min box.
+
+You can click on print to print or save as PDF
 
 Close the LB plot window to get back to the GUI 
 
 6. Click on "4- Exclude data" to exclude some value to improve the fit for one or several series. 
 
-![image](https://github.com/user-attachments/assets/241a2da7-ecb9-4a4c-a2c1-4cdc7ff61475)
+<img width="1195" height="722" alt="image" src="https://github.com/user-attachments/assets/7ec6638a-8c05-4ecc-a61b-aabefbd05403" />
+
 
 
    Check the values that seem a bit odd to exclude them for the MM fit and Lineweaver and Burk Plot:
+   
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/8fb51cf6-d173-4506-9a46-1e6248e4ccae" />
 
-![image](https://github.com/user-attachments/assets/3ec5faeb-17bb-43ac-9091-bc093fad8af2)
    
    Then click on "Apply and Refit", the new fit appears without the exclude values. 
    Note that exclude values appears as crosses on the plot 
 
    MM-plot
    
-![image](https://github.com/user-attachments/assets/ff7b2275-4092-41e2-bb0c-a8689f0440a7)
+<img width="1312" height="840" alt="image" src="https://github.com/user-attachments/assets/67b8c7ba-b231-4604-80c9-583a0ee61bcf" />
+
 
 
    Or LB plot 
 
-<img width="960" alt="image" src="https://github.com/user-attachments/assets/6a0fb587-aeca-413e-8bff-27b5c9d5aee4" />
+<img width="912" height="840" alt="image" src="https://github.com/user-attachments/assets/ebe6701f-e620-46b8-82b0-afc3e64d840b" />
+
 
 7. Click on "Reset " to clear all the fields and reset checked checboxes, and start over.
    
@@ -191,17 +195,8 @@ Close the LB plot window to get back to the GUI
 3. If copying from Excel, ensure the data is in two columns with the substrate concentration in the first column and the observed reaction rate in the second.
 4. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
-   For windows
    ```bash
       pyinstaller -F MM-vXX.py
-   ```
-   For Mac
-   ```bash
-      pyinstaller -F MM-vXX.py
-   ```
-   For Linux
-   ```bash
-      pyinstaller -F MM-vXX.py 
    ```
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\.
