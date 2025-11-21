@@ -7,7 +7,7 @@ If you found this project useful, used it, or needed to customize it (e.g., addi
 Your feedback is essential to help me improve and continue this project. 
 You can [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
-Stand-alone version for Windows, Mac, Linux (is coming) are avalible at the end of the page
+Stand-alone version for Windows, Mac, Linux are avalible to download at the end of the README
 
 The last version of the script is MM-fit-v5.0.py
 
