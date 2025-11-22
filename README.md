@@ -9,8 +9,6 @@ You can [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
 Stand-alone version for Windows, Mac, Linux are avalible to download at the end of the README
 
-The last version of the script is MM-fit-v5.0.py
-
 ## General Features:
 
 1- Paste kinetic data directly from Excel.
@@ -206,7 +204,7 @@ Close the LB plot window to get back to the GUI
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/bgsGDbjHcMdR3fS)
 
-=> For Windows Just one file (it will be a bit slow start, but can be place anywhere):
+=> For Windows Just one file (it will be a bit slow start (solved in the 5.5 version), but can be place anywhere):
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/H2GMHR3yLCHNzKY)
 
