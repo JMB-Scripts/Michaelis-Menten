@@ -25,7 +25,7 @@ Stand-alone version for Windows, Mac, Linux are avalible to download at the end 
     
 7- Clean, interactive GUI built with PyQt5.
  
-8- Save plots as PNG or print them MM plot and LB plot  
+8- Save plots as png,pdf.. or print them MM plot and LB plot  
 
 
 ## Version 5.x Major update
