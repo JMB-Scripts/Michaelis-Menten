@@ -188,14 +188,14 @@ Close the LB plot window to get back to the GUI
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solve in the 5.5 version)
    
 ## Stand-alone versions are here v5.x (last release):
-   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solved in the 5.5 version)
+   /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solved since the 5.5 version)
 
 => For Mac (if it doesn't start go to Privacy & Security and click on open anyway, as I'm an unidentify develloper) :
 
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/bgsGDbjHcMdR3fS)
 
-=> For Windows Just one file (it will be a bit slow start (solved in the 5.5 version), but can be place anywhere):
+=> For Windows Just one file (it will be a bit slow start (solved since the 5.5 version), but can be place anywhere):
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/H2GMHR3yLCHNzKY)
 
