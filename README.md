@@ -29,43 +29,34 @@ Stand-alone version for Windows, Mac, Linux are avalible to download at the end 
 
 
 ## Version 5.x Major update
-🔄 Version 5.5 — Latest Release
+🔄 Version 5.8 — Latest Release
 
-Released: Novembre 2025
+Released: September 2026
 Status: Stable
 
 ✨ New Features:
 
-1- High-Resolution PDF/Print Reports:
+* **Editable Data Table:** Removed strict row-selection behavior. Users can now double-click any cell in the main table to manually edit values after pasting, allowing for quick corrections without needing to re-paste from Excel.
 
-    The simple "Print" function (which just printed a low-res screen capture) has been completely replaced.
+* **"Change Colors" Button:** Added a new utility button to instantly randomly shuffle the plot colors and re-draw the graph if the initial random palette lacks desired contrast.
 
-    The new "Print Report" button generates a professional, multi-part report on a single A4 page.
+### 🎨 UI & Plotting Enhancements
+* **High-Contrast Randomized Palette:** Migrated from pastel colormaps to the vibrant, high-contrast `tab10` colormap. The palette is shuffled upon loading data so each dataset gets a unique, easily distinguishable set of colors.
+  
+* **Distinct Markers per Series:** Data series now cycle through distinct geometric shapes (`o`, `D`, `^`, `s`, `v`, `*`) in addition to colors. This significantly improves accessibility and clarity when multiple curves overlap.
+  
+* **Clearer Data Exclusion:** Excluded data points are strictly hardcoded to use a faded cross marker (`x`). This makes it instantly obvious which points are ignored by the fit across all plots (Michaelis-Menten, Residuals, and Lineweaver-Burk).
+  
+* **Exclusion Window Grid & Numbering:** Overhauled the Exclusion GUI. It now includes a dedicated row numbering column (`#`) on the far left and features a thin grey CSS grid, making it much easier to align checkboxes with data points in large datasets.
 
-    High-Resolution Plot (600 DPI): The Matplotlib figure is saved to an in-memory buffer at 600 DPI and then painted onto the PDF, ensuring a sharp, publication-quality image.
+### 🛡️ Data Validation & Safety
+* **Smart Paste Pre-scanning:** The clipboard paste method now pre-scans data before wiping the existing table to catch common pedagogical errors:
+  * **Missing Blank Check:** Prompts the user with a Yes/No warning if the `[S]0` column does not contain a `0.0` value.
+  * **Sorting Check:** Prompts the user with a Yes/No warning if the `[S]0` values are not strictly increasing. 
+  * *Note: Both prompts allow the user to abort the paste safely without losing their current session.*
 
-    Data Table on Report: The report now includes the full data table (minus the "Include" column) formatted below the plot.
-
-2- Advanced Data Table Printing:
-
-    The printed table is drawn manually to the PDF canvas for full control.
-
-    Red Highlighting: All excluded data (either from an unchecked row or the "Exclude" dialog) is now printed in red for easy identification.
-
-    Scientific Notation: All numbers in the printed table are formatted in scientific notation (X.XXE-Y) for a tight, clean, and uniform look.
-
-3- Statistical Error Analysis:
-
-    The core fitting logic in fit_data has been upgraded to calculate the standard error (SE) and relative standard error (%RSE) for both Vmax and Km.
-
-    These errors are now displayed directly in the plot legends for both the Michaelis-Menten and Lineweaver-Burk plots, e.g., Vmax = 4.52e-07 (± 1.7e-08 | 4%).
-
-🛠 Improvements :
-
-1- Modern Styling: All buttons now have a modern, flat-style look with CSS-like stylesheets for different states (action, utility, warning, quit).
-
-2- Pastel Colormap: The default viridis colormap has been replaced with the Set2 (pastel) colormap for clearer, more distinct plots.
-
+### 🐛 Bug Fixes
+* **LB Plot Auto-Scaling Fix:** Restored missing data aggregation loops in the Lineweaver-Burk window, fixing an issue where axes failed to auto-scale correctly.
  
 ## Dependencies:
 
