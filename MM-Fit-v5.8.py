@@ -593,16 +593,18 @@ class MainWindow(QMainWindow):
             
             # --- 1. Define Layout Rectangles ---
             margin = 40
+            
+            # Increase plot height to 65% of the page
             plot_rect = QRectF(page_rect.x() + margin, 
                                page_rect.y() + margin, 
                                page_rect.width() - 2*margin, 
-                               page_rect.height() * 0.70 - margin)
+                               page_rect.height() * 0.65 - margin)
             
+            # Let the table fill the remaining space at the bottom
             table_rect = QRectF(page_rect.x() + margin, 
                                 plot_rect.bottom() + 20, 
                                 page_rect.width() - 2*margin, 
-                                page_rect.height() * 0.25 - margin - 20)
-
+                                page_rect.bottom() - plot_rect.bottom() - 20 - margin)
             # --- 2. Draw Plot (High-Res) ---
             # Save the main figure to a buffer at 600 DPI
             buffer = io.BytesIO()
@@ -642,7 +644,7 @@ class MainWindow(QMainWindow):
         
         # --- Set Font and Get Metrics ---
         font = QFont()
-        font.setPointSize(10) # Use a small, fixed 8-point font
+        font.setPointSize(7) # Use a small, fixed 8-point font
         painter.setFont(font)
         
         # Get font metrics *from the painter* to get correct high-DPI sizes
