@@ -9,6 +9,8 @@ You can [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
 
 Stand-alone version for Windows, Mac, Linux are avalible to download at the end of the README
 
+You can also use new the web version (on desktop or mobile) here[https://jmb-scripts.github.io/MM-Fit-Web/index.html]
+
 ## General Features:
 
 1- Paste kinetic data directly from Excel.
