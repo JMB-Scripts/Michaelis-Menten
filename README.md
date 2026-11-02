@@ -55,7 +55,13 @@ Status: Stable
   * *Note: Both prompts allow the user to abort the paste safely without losing their current session.*
 ### 🎓 Pedagogical "How-To-Fit" Simulation
 * **Interactive Regression Guide:** Added the **How-To-Fit** feature, an interactive educational window designed to help students and users visualize how optimization algorithms iteratively minimize global error ($\Sigma$ Squared Error) to find optimal $V_{max}$ and $K_m$ parameters.
-* **Step-by-Step Controls & Export:** Features full playback controls (Play, Pause, and manual stepping), customizable initial starting parameters, real-time convergence tracking, and a direct **Save GIF** option to export and include visualizations in reports.
+* **Step-by-Step Controls & Export:** Features full playback controls (Play, Pause, and manual stepping), customizable initial starting parameters, real-time convergence tracking.
+
+<img width="1312" height="840" alt="MM_Fit_Animation" src="https://github.com/user-attachments/assets/0f830049-ad7c-4357-8ac2-6c9a99c6ba6d" />
+
+
+
+
 ### 🐛 Bug Fixes
 * **LB Plot Auto-Scaling Fix:** Restored missing data aggregation loops in the Lineweaver-Burk window, fixing an issue where axes failed to auto-scale correctly.
  
