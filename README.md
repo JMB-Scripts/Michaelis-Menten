@@ -57,7 +57,7 @@ Status: Stable
 * **Interactive Regression Guide:** Added the **How-To-Fit** feature, an interactive educational window designed to help students and users visualize how optimization algorithms iteratively minimize global error ($\Sigma$ Squared Error) to find optimal $V_{max}$ and $K_m$ parameters.
 * **Step-by-Step Controls & Export:** Features full playback controls (Play, Pause, and manual stepping), customizable initial starting parameters, real-time convergence tracking.
 
-<img width="1312" height="840" alt="MM_Fit_Animation" src="https://github.com/user-attachments/assets/0f830049-ad7c-4357-8ac2-6c9a99c6ba6d" />
+<img width="656" height="420" alt="MM_Fit_Animation" src="https://github.com/user-attachments/assets/0f830049-ad7c-4357-8ac2-6c9a99c6ba6d" />
 
 
 
@@ -110,13 +110,13 @@ https://github.com/user-attachments/assets/711b63c7-8805-4179-b599-67a5e412c16f
 1. If python is present on your system then run the script:
 
 ```bash
-python MM-Fit-v5.x.py
+python MM-Fit-v6.x.py
 ```
 
 or use the stand-alone for Window, Mac.app, or Linux (link below)
 double click on the file:
 
-MM-fit-v5.0.exe
+MM-fit.exe
 
 2. A window will popup (beware first start is ver very long 40-45 sec):
 
@@ -194,7 +194,7 @@ Close the LB plot window to get back to the GUI
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solve in the 5.5 version)
    
-## Stand-alone versions are here v5.x (last release):
+## Stand-alone versions are here v6.x (last release):
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solved since the 5.5 version)
 
 => For Mac (if it doesn't start go to Privacy & Security and click on open anyway, as I'm an unidentify develloper) :
