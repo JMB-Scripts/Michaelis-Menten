@@ -31,7 +31,7 @@ You can also use new the web version (on desktop or mobile) [here](https://jmb-s
 
 
 ## Version 6.x Major update
-🔄 Version 5.8 — Latest Release
+🔄 Version 6.3 — Latest Release
 
 Released: November 2026
 Status: Stable
