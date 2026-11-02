@@ -189,7 +189,7 @@ Close the LB plot window to get back to the GUI
 4. It's possible to make an exe file for Windows using "pyinstaller" or "py2app", to distribute the script on computers that don't have Python install:
 
    ```bash
-      pyinstaller -F MM-v5.x.py
+      pyinstaller -F MM-v6.x.py
    ```
 
    /!\ For the first run be patient, the embeded matplotlib needs to compile and it takes sometimes /!\ (this should be solve in the 5.5 version)
@@ -206,8 +206,9 @@ Close the LB plot window to get back to the GUI
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/H2GMHR3yLCHNzKY)
 
-=> For Linux (5.0):
+=> For Linux (5.0):(rather use python directly) 
 
 [Get it from Here](https://cloud.univ-grenoble-alpes.fr/s/cdAbePCEzCoDzrF)
-   
+
+  
 Don't hesitate to reach me if you need help setting it up  [reach out to me via email](jean-marie.bourhis@univ-grenoble-alpes.fr).
