@@ -30,25 +30,22 @@ You can also use new the web version (on desktop or mobile) [here](https://jmb-s
 8- Save plots as png,pdf.. or print them MM plot and LB plot  
 
 
-## Version 5.x Major update
+## Version 6.x Major update
 🔄 Version 5.8 — Latest Release
 
-Released: September 2026
+Released: November 2026
 Status: Stable
 
-✨ New Features:
+## 🚀 What's New in MM-Fit v6.3
 
-* **Editable Data Table:** Removed strict row-selection behavior. Users can now double-click any cell in the main table to manually edit values after pasting, allowing for quick corrections without needing to re-paste from Excel.
-
-* **"Change Colors" Button:** Added a new utility button to instantly randomly shuffle the plot colors and re-draw the graph if the initial random palette lacks desired contrast.
+### ✏️ Editable Data Table
+* **Manual Cell Editing:** Removed strict row-selection behavior. Users can now double-click any cell in the main table to manually edit values after pasting, allowing for quick corrections without needing to re-paste from Excel.
 
 ### 🎨 UI & Plotting Enhancements
+* **"Change Colors" Button:** Added a new utility button to instantly randomly shuffle the plot colors and re-draw the graph if the initial random palette lacks desired contrast.
 * **High-Contrast Randomized Palette:** Migrated from pastel colormaps to the vibrant, high-contrast `tab10` colormap. The palette is shuffled upon loading data so each dataset gets a unique, easily distinguishable set of colors.
-  
 * **Distinct Markers per Series:** Data series now cycle through distinct geometric shapes (`o`, `D`, `^`, `s`, `v`, `*`) in addition to colors. This significantly improves accessibility and clarity when multiple curves overlap.
-  
 * **Clearer Data Exclusion:** Excluded data points are strictly hardcoded to use a faded cross marker (`x`). This makes it instantly obvious which points are ignored by the fit across all plots (Michaelis-Menten, Residuals, and Lineweaver-Burk).
-  
 * **Exclusion Window Grid & Numbering:** Overhauled the Exclusion GUI. It now includes a dedicated row numbering column (`#`) on the far left and features a thin grey CSS grid, making it much easier to align checkboxes with data points in large datasets.
 
 ### 🛡️ Data Validation & Safety
@@ -56,7 +53,9 @@ Status: Stable
   * **Missing Blank Check:** Prompts the user with a Yes/No warning if the `[S]0` column does not contain a `0.0` value.
   * **Sorting Check:** Prompts the user with a Yes/No warning if the `[S]0` values are not strictly increasing. 
   * *Note: Both prompts allow the user to abort the paste safely without losing their current session.*
-
+### 🎓 Pedagogical "How-To-Fit" Simulation
+* **Interactive Regression Guide:** Added the **How-To-Fit** feature, an interactive educational window designed to help students and users visualize how optimization algorithms iteratively minimize global error ($\Sigma$ Squared Error) to find optimal $V_{max}$ and $K_m$ parameters.
+* **Step-by-Step Controls & Export:** Features full playback controls (Play, Pause, and manual stepping), customizable initial starting parameters, real-time convergence tracking, and a direct **Save GIF** option to export and include visualizations in reports.
 ### 🐛 Bug Fixes
 * **LB Plot Auto-Scaling Fix:** Restored missing data aggregation loops in the Lineweaver-Burk window, fixing an issue where axes failed to auto-scale correctly.
  
